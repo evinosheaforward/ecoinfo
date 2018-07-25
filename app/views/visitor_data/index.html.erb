@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Visitor Data</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rating</th>
+      <th>Review</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @visitor_data.each do |visitor_datum| %>
+      <tr>
+        <td><%= visitor_datum.rating %></td>
+        <td><%= visitor_datum.review %></td>
+        <td><%= link_to 'Show', visitor_datum %></td>
+        <td><%= link_to 'Edit', edit_visitor_datum_path(visitor_datum) %></td>
+        <td><%= link_to 'Destroy', visitor_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Visitor Datum', new_visitor_datum_path %>

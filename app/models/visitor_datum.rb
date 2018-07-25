@@ -1,0 +1,2 @@
+class VisitorDatum < ApplicationRecord
+end

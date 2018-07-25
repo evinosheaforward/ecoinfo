@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @visitor_datum.rating %>
+</p>
+
+<p>
+  <strong>Review:</strong>
+  <%= @visitor_datum.review %>
+</p>
+
+<%= link_to 'Edit', edit_visitor_datum_path(@visitor_datum) %> |
+<%= link_to 'Back', visitor_data_path %>
