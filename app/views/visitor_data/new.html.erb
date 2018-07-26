@@ -1,5 +1,24 @@
-<h1>Please give a quick review of my website!</h1>
+<h1>Add Reviewt</h1>
 
-<%= render 'form', visitor_datum: @visitor_datum %>
+<%= form_for @visitor_datum, url: visdata_path do |f| %>
+    <% if @visitor_datum.errors.any? %>
+        <% @visitor_datum.errors.full_messages.each do |msg| %>
+            <div class="alert alert-danger">
+                <%= msg %>
+            </div>
+        <% end %>
+    <% end %>
+    <p>
+        <%= f.label :rating %><br>
+        <%= f.number_field :rating %>
+    </p>
 
-<%= link_to 'Back', visitor_data_path %>
+    <p>
+        <%= f.label :review %><br>
+        <%= f.text_area :review %>
+    </p>
+
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>

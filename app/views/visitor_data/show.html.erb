@@ -1,14 +1,10 @@
-<p id="notice"><%= notice %></p>
+<h2><%= @visitor_datum.rating %></h2>
+<p><%= @visitor_datum.review %></p>
+<hr>
+<%= link_to "Edit", edit_post_path(@visitor_datum), :class => 'btn btn-default' %>
+<%= link_to "Delete", post_path(@visitor_datum),
+				method: :delete,
+				data: {confirm: 'Are you sure?'},
+				:class => 'btn btn-danger' %>
 
-<p>
-  <strong>Rating:</strong>
-  <%= @visitor_datum.rating %>
-</p>
-
-<p>
-  <strong>Review:</strong>
-  <%= @visitor_datum.review %>
-</p>
-
-<%= link_to 'Edit', edit_visitor_datum_path(@visitor_datum) %> |
-<%= link_to 'Back', visitor_data_path %>
+<hr>

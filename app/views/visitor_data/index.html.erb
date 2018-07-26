@@ -1,29 +1,10 @@
-<p id="notice"><%= notice %></p>
+<h1>All Posts</h1>
 
-<h1>Visitor Data</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Rating</th>
-      <th>Review</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @visitor_data.each do |visitor_datum| %>
-      <tr>
-        <td><%= visitor_datum.rating %></td>
-        <td><%= visitor_datum.review %></td>
-        <td><%= link_to 'Show', visitor_datum %></td>
-        <td><%= link_to 'Edit', edit_visitor_datum_path(visitor_datum) %></td>
-        <td><%= link_to 'Destroy', visitor_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Visitor Datum', new_visitor_datum_path %>
+<% @visitor_data.each do |post| %>
+	<div class="well">
+		<h3>Rating of website (1-10): <%= post.rating %></h3>
+		<p>Comment: <%= post.review %></p>
+    <h5>Created atL <%= post.created_at %></h5>
+    <h4>----------------------------------------</h4>
+	</div>
+<% end %>

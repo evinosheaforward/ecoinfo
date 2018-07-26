@@ -1,28 +1,19 @@
 class VisitorDataController < ApplicationController
   before_action :set_visitor_datum, only: [:show, :edit, :update, :destroy]
-
   # GET /visitor_data
   # GET /visitor_data.json
   def index
     @visitor_data = VisitorDatum.all
-  end
 
-  # GET /visitor_data/1
-  # GET /visitor_data/1.json
-  def show
-  end
+    respond_to do |format|
+    format.html  # index.html.erb
+    format.json  { render :json => @visitor_data }
+ end
 
-  # GET /visitor_data/new
-  def new
-    @visitor_datum = VisitorDatum.new
-  end
-
-  # GET /visitor_data/1/edit
   def edit
   end
 
-  # POST /visitor_data
-  # POST /visitor_data.json
+  # GET /visitor_data/new
   def create
     @visitor_datum = VisitorDatum.new(visitor_datum_params)
 
@@ -71,4 +62,5 @@ class VisitorDataController < ApplicationController
     def visitor_datum_params
       params.require(:visitor_datum).permit(:rating, :review)
     end
+end
 end

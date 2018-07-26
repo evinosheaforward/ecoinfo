@@ -1,6 +1,23 @@
-<h1>Editing Visitor Datum</h1>
+<h1>Edit Post</h1>
+<%= form_for :post, url: post_path(@post), dethod: :patch do |f| %>
+    <% if @visitor_datum.errors.any? %>
+        <% @post.errors.full_messages.each do |msg| %>
+            <div class="alert alert-danger">
+                <%= msg %>
+            </div>
+        <% end %>
+    <% end %>
+    <p>
+        <%= f.label :title %><br>
+        <%= f.text_field(:title, {:class => 'form-control'}) %>
+    </p>
 
-<%= render 'form', visitor_datum: @visitor_datum %>
+    <p>
+        <%= f.label :body %><br>
+        <%= f.text_area(:body, {:class => 'form-control'}) %>
+    </p>
 
-<%= link_to 'Show', @visitor_datum %> |
-<%= link_to 'Back', visitor_data_path %>
+    <p>
+        <%= f.submit({:class => 'btn btn-primary'}) %>
+    </p>
+<% end %>
