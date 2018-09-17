@@ -1,25 +1,11 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# My Personal website - evinoshea
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby Version: 2.5
 
-* System dependencies
+* Building, running, and testing are all scripts in
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# My Personal website - evinoshea
+```
+scripts/
+```
