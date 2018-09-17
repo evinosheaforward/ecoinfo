@@ -23,7 +23,7 @@
 
 <p>
   My experience for the last 3 years has been at the data processing center
-  (Science Operations Center) for Parker Solar Probe-ISOIS (<%= @psp_url %>).
+  (Science Operations Center) for <%= link_to 'Parker Solar Probe-ISOIS', @psp_url %>).
   We use a postgres database and sqlalchemy to store our telemetry data. We
   have running daemons that regularly cycle the data through out processing pipeline.
   Where the various stages of the pipline are asynchronously running daemons.

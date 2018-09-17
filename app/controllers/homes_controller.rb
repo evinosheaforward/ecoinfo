@@ -10,7 +10,7 @@ class HomesController < ApplicationController
   end
 
   def skills
-    @psp_url = 'parkersolarprobe.jhuapl.edu/'
+    @psp_url = 'http://parkersolarprobe.jhuapl.edu/News-Center/Show-Article.php?articleID=86'
   end
 
   def projects
