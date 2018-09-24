@@ -1,9 +1,28 @@
-FROM ruby:2.5
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
-RUN mkdir /evinoshea
-WORKDIR /evinoshea
-VOLUME /var/lib/mysql
-COPY Gemfile /evinoshea/Gemfile
-COPY Gemfile.lock /evinoshea/Gemfile.lock
-RUN bundle install
-ADD . /evinoshea
+FROM node
+
+ENV NPM_CONFIG_LOGLEVEL warn
+ARG app_env
+ENV APP_ENV $app_env
+
+RUN mkdir -p /frontend
+WORKDIR /frontend
+COPY ./frontend ./
+
+RUN npm install
+
+RUN npm install react-router-dom
+RUN npm install --save react react-dom
+RUN	npm install --save react-bootstrap
+RUN npm install semantic-ui-react
+
+CMD if [ ${APP_ENV} = production ]; \
+	then \
+	npm install -g http-server && \
+	npm run build && \
+	cd build && \
+	hs -p 3000; \
+	else \
+	npm run start; \
+	fi
+
+EXPOSE 3000

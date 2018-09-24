@@ -1,5 +1,2 @@
-# My Personal website - ecoinfo -- to be: react app
-
-```
-scripts/
-```
+# ecoinfo
+## static react app for personal website
