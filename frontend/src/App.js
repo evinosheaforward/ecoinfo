@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.png';
+
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import Page from './Page.jsx';
+import Head from './Header.jsx';
+
 import './App.css';
-import Page from './Page';
 
 class App extends Component {
   render() {
     return (
-			<div className="App">
-				<header className="App-header">
-					<img src={logo} className="App-logo" alt="logo" />
-					<h1 className="App-title">Evin O'Shea -- Info</h1>
-				</header>
-				<section>
+			<Router>
+				<div className="App">
+					<Head/>
 					<Page/>
-				</section>
-      </div>
+      	</div>
+			</Router>
     );
   }
 }
