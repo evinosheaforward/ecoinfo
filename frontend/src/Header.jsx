@@ -35,8 +35,12 @@
 									</NavItem>
 									<NavDropdown eventKey={3} title="Projects" id="basic-nav-dropdown">
 										<MenuItem eventKey={3.1}
-															href="https:/ecoblog.herokuapp.com">
-											ECO-Blog
+															href="https:/github.com/evinosheaforward">
+											GitHub
+										</MenuItem>
+										<MenuItem eventKey={3.1}
+															href="https:/ecoproductivity.herokuapp.com">
+											ECO-Productivity
 										</MenuItem>
 									</NavDropdown>
 								</Nav>
