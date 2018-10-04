@@ -1,30 +1,18 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
-import Sidebar from "react-sidebar";
-
-import Col from 'react-bootstrap/lib/Col';
-import Row from 'react-bootstrap/lib/Row';
-import Grid from 'react-bootstrap/lib/Grid';
-
+//import Sidebar from "react-sidebar";
 
 import './Page.css';
 
 class Page extends Component {
 	render() {
 		return (
-			<Grid>
-			<Row>
-				<Col>
-					<body>
-			        <img src="./psp.jpg"/>
-			        <Route exact path="/" component={Home} />
-			        <Route path="/about" component={About} />
-			        <Route path="/experience" component={Experience} />
-					</body>
-				</Col>
-			</Row>
-			</Grid>
+			<body>
+				<Route exact path="/" component={Home} />
+				<Route path="/about" component={About} />
+				<Route path="/experience" component={Experience} />
+			</body>
 		);
 	}
 }
