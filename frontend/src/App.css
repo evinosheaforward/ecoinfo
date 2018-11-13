@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+	background-color: #222;
+	color: white;
 }
 
 .App-logo {
@@ -21,7 +23,6 @@
 
 .Head {
  background-color: #ff53ff;
- border:3px solid black;
  z-index: 100;
  position: relative;
 }
@@ -56,7 +57,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: black;
+  color: white;
 	margin-top: 40px;
 	margin-bottom: 10px;
 }

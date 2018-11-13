@@ -28,34 +28,28 @@ class Home extends Component {
 				</h2>
 				<br/>
 				<p>
-				  &nbsp;&nbsp;This is my main website, which links to other Projects
-					that I am hosting and working on.
-					<br/>
-					<br/>
-					&nbsp;&nbsp;This website is the way that I feel most comfortable publicizing myself. As I can demonstrate experience with it.
-		  		Thank you for spending the time to see who I am!
+				  &nbsp;&nbsp;This is my personal website, which links to other projects
+					that I am working on. Thank you for spending the time to see who I am!
 					<br/>
 					<br/>
 					&nbsp;&nbsp;I am Evin O'Shea. I studied physics as an undergraduate because I love
-					to learn and I wanted to learn how the world works. But, during my time as
+					to learn and I wanted to learn how the world works. During my time as
 					an undergrad I didn't just learn about physics, I also learned a lot about software development.
 					I worked on the data processing for NASA's Parker Solar Probe-IS☉IS
-					where I learned the ropes of software development from python to git to SQL and even
-					logging and documentation.
+					where I learned the ropes of software engineering with Python, Git, SQL,
+					logging, log aggregation and archiving, and documentation.
 					<br/>
 					<br/>
-					&nbsp;&nbsp;As I finished my schooling, I decided I wanted to be a web developer
-					because I wanted to have a say in building the future of the internet.
-					Though I had worked in software development, I had not used we developement
-					frameworks. I had been writting the back-end scripts. Now, I am working
-					on projects to show my progress and my ability to learn. This website
-					was built with React, and though it is simple, learning a little can go a long
-					way.
+					&nbsp;&nbsp;As I finished my schooling, I decided I wanted to be a software
+					developer because I wanted to have help build the future of the internet.
+					Though I have worked in software development, I had not used any web development
+					frameworks during my work on Solar Probe; I had been working on the back-end/data processing. Now, I have worked
+					on projects to showcase my independent projects and my ability to learn.
 					<br/>
 					<br/>
-					&nbsp;&nbsp;I have been studying various emerging web development technologies, including
-					Ruby on Rails, Docker, Golang, etc. I have learned a lot and I still have
-					more to learn, but I am always ready and excited to learn anything!
+					&nbsp;&nbsp;I have been studying various software technologies including
+					Ruby on Rails, Docker, Golang, React, and more! I have learned a lot and there is always more to learn,
+					but I am always ready and excited to learn anything!
 					<br/>
 					<br/>
 				</p>
@@ -71,13 +65,7 @@ class About extends Component {
 				<h2>About the website</h2>
 				<p>
 				  &nbsp;&nbsp;I have always wanted to publish projects for other people to see
-					and use. I also think it would be a great way to
-				  learn and show what I have done. I think it will be a great
-					way to track my work and progress.
-				</p>
-				<p>
-				  &nbsp;&nbsp;Check out the Projects tab for my upcoming and in-progress projects.
-					Also look at my &nbsp;
+					and use. Check out the Projects tab and my &nbsp;
 					<a href="https://github.com/evinosheaforward">
 						github page
 					</a>
@@ -126,8 +114,8 @@ class Experience extends Component {
 				</p>
 				<p>
 				  &nbsp;&nbsp;We use an ETL framework which is a file manager and ETL processor. Our files have
-					specifications that fit to NASA standards and we use these specs todo
-					identify the filetype, save the file, and then perform all possible
+					specifications that fit to NASA standards and we use these specs to
+					identify the file type, save the file, and then perform all possible
 					ETL's for that file. The system is configurable so that any script can be used for file
 					identification and any scripts can be used for the ETL. The ETL framework
 					was developed at Los Alamos National Lab and is an ongoing internal development.
@@ -135,9 +123,6 @@ class Experience extends Component {
 				<p>
 					&nbsp;&nbsp;I have contributed heavily writing the ETL scripts that are used by
 					our framework for creating science-ready and NASA-standard data products.
-				</p>
-				<p>
-				  &nbsp;&nbsp;Soon our data will be hosted on a website and I will be able to link it here!
 				</p>
 			</section>
 		);
